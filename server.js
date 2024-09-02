@@ -64,7 +64,7 @@ const session = require("express-session");
 const passport = require("passport");
 // connect-mongo: MongoDB session store for Express and Connect; It provides a way to store session
 // data in a MongoDB, used for session persistence across server restarts.
-const MongoStore = require("connect-mongo")(session);
+const MongoStore = require("connect-mongo");
 
 // MODULES (Built-in)
 const fs = require("fs");
@@ -73,7 +73,7 @@ const path = require("path");
 
 
 const appconf = require("./config/app");
-
+const init = require('./init/index');
 
 function initServer() {
   /**
@@ -93,18 +93,24 @@ function initServer() {
   /**
    * Error log management
    */
-  let errorLogStream = fs.createWriteStream(__dirname + "/logs/error.log", {
-    flags: "a",
-  });
+
+  const LOG_DIR = path.join(__dirname, process.env.DIR_LOG_ERROR);
+  const LOG_FILE = path.join(LOG_DIR, process.env.FILE_LOG_ERROR);
+
+  if (!fs.existsSync(LOG_DIR)) {
+    console.log("\x1b[93m[**]\x1b[0m Creating logs directory")
+    fs.mkdirSync(LOG_DIR, {recursive: true});
+  }
+  const errorLogStream = fs.createWriteStream(LOG_FILE, {flags: "a"});
 
   /**
    * Error handling, avoiding crash
    */
   process.on("uncaughtException", (err, req, res, next) => {
-    let date = new Date();
-    console.error(`+++++++ ${date} error found, logging event +++++++ `);
+    let date = new Date().toISOString();
+    console.error(`\x1b[91m.: [!] \x1b[0m(${date}) Error found, logging event... \x1b[91m[!] :.\x1b[0m`);
     console.error(err.stack);
-    errorLogStream.write(`${date} \n ${err.stack} \n\n`);
+    errorLogStream.write(`(${date}) ${err.message}\n${err.stack}\n--`);
     return;
   });
 
@@ -141,23 +147,21 @@ function initServer() {
    * Compress middleware to gzip content
    */
   app.use(compression());
-  // app.use(favicon(__dirname + '/public/img/favicon.png'))
 
   /**
    * Require Mongo configuration
    */
-  require("./config/mongo/config");
+  //require("./init/database");
 
   /**
-   * Require local and social network passport
+   * Require local passport
    */
   require("./config/passport/local");
 
   /**
    * View engine setup
    */
-
-  app.use(bodyParser.json({ limit: "50mb" }));
+  app.use(bodyParser.json({ limit: "24mb" }));
   // app.use(bodyParser.json());
   app.use(
     bodyParser.urlencoded({
@@ -169,7 +173,7 @@ function initServer() {
   app.use(
     session({
       name: appconf.db.main.name,
-      secret: process.env.SECRET,
+      secret: appconf.session.main.secret,
       saveUninitialized: true,
       resave: true,
       cookie: {
@@ -178,8 +182,8 @@ function initServer() {
         sameSite: "None",
         secure: true,
       },
-      store: new MongoStore({
-				url: `mongodb://${appconf.db.main.host}:${appconf.db.main.port}/${appconf.db.main.name}`,
+      store: MongoStore.create({
+				mongoUrl: appconf.db.main.mongostring,
         host: appconf.db.main.host,
         collection: "sessions",
         autoReconnect: true,
@@ -194,7 +198,6 @@ function initServer() {
   app.use(
     cors({
       credentials: true,
-
       origin: ["http://localhost:3000", "http://localhost:5173"],
       methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
       preflightContinue: false,
@@ -259,10 +262,6 @@ function initServer() {
   http.createServer(app).listen(app.get("port"), () => {
     console.log(`${appconf.name} server listening on port ${appconf.port}`);
   });
-} // initserver()
+}
 
-/**
- * Inicializo MongoDB,
- * luego inicializo el servidor
- */
-connectMongo().then(initserver);
+init.db.mongo().then(initServer);

@@ -1,0 +1,227 @@
+(2024-09-02T00:06:52.526Z) Cannot init client. Please provide correct options
+Error: Cannot init client. Please provide correct options
+    at new MongoStore (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:123:19)
+    at Function.create (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:140:16)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:179:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:07:56.988Z) Cannot init client. Please provide correct options
+Error: Cannot init client. Please provide correct options
+    at new MongoStore (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:123:19)
+    at Function.create (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:140:16)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:179:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:08:18.767Z) Cannot init client. Please provide correct options
+Error: Cannot init client. Please provide correct options
+    at new MongoStore (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:123:19)
+    at Function.create (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:140:16)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:179:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:08:34.116Z) Cannot init client. Please provide correct options
+Error: Cannot init client. Please provide correct options
+    at new MongoStore (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:123:19)
+    at Function.create (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:140:16)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:179:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:08:59.004Z) Cannot init client. Please provide correct options
+Error: Cannot init client. Please provide correct options
+    at new MongoStore (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:123:19)
+    at Function.create (/home/torswq/Documents/pprojects/hermes/hermes-backend/node_modules/connect-mongo/build/main/lib/MongoStore.js:140:16)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:179:25)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:09:31.920Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:10:00.611Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:10:15.867Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:10:42.116Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:11:12.037Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:12:30.846Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:13:57.463Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:17:32.707Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:17:43.632Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:18:12.547Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:18:25.684Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:19:00.536Z) Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+Error: Cannot find module './expenses'
+Require stack:
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js
+- /home/torswq/Documents/pprojects/hermes/hermes-backend/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1028:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:873:27)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at module.exports (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/index.js:2:2)
+    at initServer (/home/torswq/Documents/pprojects/hermes/hermes-backend/server.js:207:28)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--(2024-09-02T00:19:16.416Z) Invalid regular expression flags
+/home/torswq/Documents/pprojects/hermes/hermes-backend/controllers/user.js:20
+			...(req.query.username ? {username: /g/req.query.username} : {}),
+			                                    ^
+
+SyntaxError: Invalid regular expression flags
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1126:15)
+    at Module._compile (node:internal/modules/cjs/loader:1162:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1252:10)
+    at Module.load (node:internal/modules/cjs/loader:1076:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:911:12)
+    at Module.require (node:internal/modules/cjs/loader:1100:19)
+    at require (node:internal/modules/cjs/helpers:119:18)
+    at Object.<anonymous> (/home/torswq/Documents/pprojects/hermes/hermes-backend/routes/user.js:6:5)
+    at Module._compile (node:internal/modules/cjs/loader:1198:14)
+--
