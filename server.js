@@ -123,26 +123,27 @@ function initServer() {
    * Response definition
    */
   app.use((req, res, next) => {
-    res.success = (data, status) => {
-      return res.status(status !== undefined ? status : 200).send({
-        data: data !== undefined ? data : null,
-        error: null,
-      });
-    };
+  // Define success response handler
+  res.success = (data, status) => {
+    return res.status(status !== undefined ? status : 200).send({
+      data: data !== undefined ? data : null,
+      error: null,
+    });
+  };
 
-    res.failure = (errorCode, errorMsg, status) => {
-      return res.status(status !== undefined ? status : 500).send({
-        data: data !== undefined ? data : null,
-        error: {
-          code: errorCode !== undefined ? errorCode : -1,
-          message: errorMsg !== undefined ? errorMsg : "Unknown Error",
-        },
-      });
-    };
+  // Define failure response handler
+  res.failure = (errorCode, errorMsg, status) => {
+    return res.status(status !== undefined ? status : 500).send({
+      data: null,
+      error: {
+        code: errorCode !== undefined ? errorCode : -1,
+        message: errorMsg !== undefined ? errorMsg : "Unknown Error",
+      },
+    });
+  };
 
-    next();
-  });
-
+  next();
+});
   /**
    * Compress middleware to gzip content
    */

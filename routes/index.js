@@ -1,3 +1,4 @@
-module.exports = () => {
-	require('./user');
+module.exports = (application) => {
+	require('./login')(application)
+	require('./user')(application)
 }

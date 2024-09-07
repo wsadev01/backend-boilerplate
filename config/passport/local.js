@@ -48,7 +48,7 @@ passport.deserializeUser((user, done) => {
  */
 passport.use('local-login', new LocalStrategy(async (username, password, done) => {
   try {
-    const error = 'Error en usuario/contraseña'; // Error message for invalid credentials
+    const error = 'Wrong user or password'; // Error message for invalid credentials
     const user = await Users.findOne({ username }).exec();
 
     // If the user is not found or the password doesn't match, return an error

@@ -1,13 +1,21 @@
 const RateLimiter = require('limiter').RateLimiter;
 const limiter = new RateLimiter(10, 'second', true);
 
-module.exports = (_, res, next) => {
-	limiter.removeTokens(1, (_, remainingRequests) => {
-		if (remainingRequests < 0) {
-			res.writeHead(429, { 'Content-Type': 'text/plain;charset=UTF-8' });
-			res.end('You are being rate limited buddy');
-		}
+module.exports = (req, res, next) => {
+	console.log("RA")
+  limiter.removeTokens(1, (err, remainingRequests) => {
+		console.log("RB")
+    if (err) {
+			console.log("RC")
+      return next(err); // Pass the error to the global error handler
+    }
 
-		return next();
-	});
-}
+    if (remainingRequests < 0) {
+			console.log("RD")
+      res.status(429).send('You are being rate limited, buddy');
+    } else {
+      return next(); // Continue to the next middleware or route handler
+    }
+  });
+	return next();
+};

@@ -14,7 +14,7 @@ const appconfig = {
 	},
 	session: {
 		main: {
-			secret: process.env.SECRET
+			secret: process.env.JWT_SECRET
 		},
 	},
 	name: process.env.APP_NAME,
