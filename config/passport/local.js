@@ -49,14 +49,16 @@ passport.deserializeUser((user, done) => {
 passport.use('local-login', new LocalStrategy(async (username, password, done) => {
   try {
     const error = 'Wrong user or password'; // Error message for invalid credentials
-    const user = await Users.findOne({ username }).exec();
+    const _user = await Users.findOne({ username }).select('+password').exec();
 
     // If the user is not found or the password doesn't match, return an error
-    if (!user || !bcrypt.compareSync(password, user.password)) {
+    if (!_user || !bcrypt.compareSync(password, _user.password)) {
       return done(null, false, { error });
     }
 
     // If authentication is successful, return the user object
+    const user =  _user.toObject();
+    delete user.password;
     return done(null, user);
   } catch (err) {
     return done(err);
