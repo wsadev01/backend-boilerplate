@@ -6,7 +6,7 @@ const UserSchema = new mongoose.Schema(
   /* Your data */
     deleted: { type: Boolean, default: false },
 		username: { type: String },
-		password: { type: String },
+		password: { type: String, select: false },
 		createdBy: { type: String, enum: [...availableRoles, "system"], required: true},
 		rol: {
 			type: String,
